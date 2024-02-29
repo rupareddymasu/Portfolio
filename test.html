@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Page Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      
+    }
+    span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) }
+  100% { transform: rotate(  0.0deg) }
+}
+
+    .portfolio-section {
+      height: 100vh;
+      display: flex;
+      font-size: 24px;
+    }
+
+    #section1 {
+      background-color: white;
+
+    }
+
+    #section2 {
+      background-color: white;
+      display: flex;
+    }
+
+    #section3 {
+      background-color: white;
+    }
+    #section4 {
+      background-color: white;
+
+    }
+   
+    nav {
+      position: fixed;
+      /* top: 25px; */
+      left: 0;
+      height: 80px;
+      width: 100%;
+      background-color: white;
+      /* color: white; */
+      padding: 10px 20px;
+      box-sizing: border-box;
+    }
+
+    nav a {
+     
+      color: gray;
+      text-decoration: none;
+      margin-right: 60px;
+      margin-left: 70px;
+      font-size: 30px;
+    }
+    .img1{
+      height: 500px;
+      width: 500px;
+      margin-left: 900px;
+      margin-top: -350px;
+  
+   }
+
+   .container {
+    
+      max-width: 1200px;
+      margin: 50px auto;
+      width: 700px;
+      padding: 20px;
+      margin-top: 9px;
+      margin-right: 20px;
+      background-color: lightblue; 
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #e63e6d; 
+      text-align: center;
+    }
+
+    .education-details {
+      margin-top: 30px;
+    }
+
+    .education-item {
+      height: 120px;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .education-item h2 {
+      color:pink;
+      font-size: 20px;
+    }
+
+    .education-item p {
+      color: #555;
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+    }
+
+   .main{
+    display: flex;
+   }
+   .container1 {
+      max-width: 600px;
+      width: 700px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .hello {
+      text-align: center;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill-name {
+      font-weight: bold;
+    }
+
+    .progress-bar {
+      width: 100%;
+      background-color: #ddd;
+      border-radius: 5px;
+      height: 20px;
+      margin-top: 5px;
+    }
+
+    .progress {
+      height: 100%;
+      background-color: pink;
+      border-radius: 5px;
+    }
+
+    @keyframes fill {
+      from {
+        width: 0%;
+      }
+    }
+
+    .html .progress {
+      animation: fill 2s ease-out;
+      width: 90%; /* Change the width to represent the progress */
+    }
+
+    .css .progress {
+      animation: fill 2s ease-out;
+      width: 80%; /* Change the width to represent the progress */
+    }
+
+    .javascript .progress {
+      animation: fill 2s ease-out;
+      width: 70%; /* Change the width to represent the progress */
+    }
+
+    .react .progress {
+      animation: fill 2s ease-out;
+      width: 40%; /* Change the width to represent the progress */
+    }
+
+    .python .progress {
+      animation: fill 2s ease-out;
+      width: 50%; /* Change the width to represent the progress */
+    }
+  
+    
+    
+
+    
+  </style>
+</head>
+<body>
+  <nav>
+    <a style="font-family: cursive; color: pink ; font-size: 35px;">Rupa Reddymasu</a>
+    <a href="#section1">Home</a>
+    <a href="#section2">Education</a>
+    <a href="#section3">Skills</a>
+    <a href="#section4">Certifications</a>
+  </nav>
+  <div id="section1" class="portfolio-section" >
+   <div style="margin-left: 90px; margin-top: 100px; display: inline-block;">
+    <h2>Hello ALL! I'm Rupa <span class="wave">👋</span></h2>
+    <p style="font-size: 22px; color: lightgray; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">I'm an Aspiring front-end developer who loves making websites look good and work well <br> 
+       using HTML, CSS, and JavaScript. I focus on making sure everyone can use the websites <br>
+        I build.  Check out my portfolio to see what I've done!
+        
+      </p>
+      <h3 style="margin-top: 50px;">Contact Me</h3>
+      <div style="display: flex; ">
+        <a  href="https://www.linkedin.com/in/rupa-reddymasu-8a563020a" target=_blank>
+          <img src="./linkedin.png"/>
+        </a>
+        <a href="mailto:rupareddymasu@gmail.com" target="_blank">
+          <img style="margin-top: 7px; margin-left: 70px;" src="./gmail.png" />
+        </a>
+        <a href="https://github.com/rupareddymasu" target="_blank">
+          <img style="margin-top: 6px; margin-left: 70px; size: 20px;" src="./github1.png" />
+        </a>
+        <a href="https://github.com/rupareddymasu" target="_blank">
+          <img style="margin-top: 6px; margin-left: 70px; size: 20px;" src="./instagram.png" />
+        </a>
+       
+       
+      </div>
+       <img class="img1" src="./women.jpg"/>
+    </div>
+    
+    <!-- <h2>Project 1</h2>
+    <p>Description of project 1 goes here...</p> -->
+    <!-- <img  src="./women.jpg" alt=""  height="500px" width="500px"> -->
+  </div>
+
+  <div id="section2" class="portfolio-section" >
+    
+    <div class="container">
+      <h1>Education Details</h1>
+  
+      <div class="education-details">
+        <div class="education-item">
+          <h2>Bachelor of Science in Computer Science</h2>
+          <p>Gitam University, 2019-2023</p>
+          <p>Cgpa:8.46</p>
+        </div>
+  
+        <div class="education-item">
+          <h2>Intermediate</h2>
+          <p>Sri Chaitanya Junior college, 2017-2019</p>
+          <p>Percentage:96.7%</p>
+        </div>
+  
+        <div class="education-item">
+          <h2>High School 10th standard</h2>
+          <p>Little Flower CBSE school, 2016-2017</p>
+        </div>
+        
+   <!-- <img style=" margin-left: 20px;  margin-top: -900px;" src="./2479165.jpg"  height="500px" width="600px" > -->
+        <!-- Add more education items as needed -->
+      </div>
+      <img style=" margin-left: -750px;  margin-top: -900px;" src="./uni.png"  height="500px" width="500px" >
+ 
+  </div>
+  <!-- <h3>Certificates</h3> -->
+  <!-- <div style="display: flex;">
+  <div style="height: 300px; width: 300px; background-color: whitesmoke; margin-top: 60px; margin-right: 100px;">
+    <a href="https://www.coursera.org/account/accomplishments/certificate/HLREQRWRJF6D">
+      <img src="./kroppa-digital.gif" height="200px" width="300px"/>
+      <p style="color: pink;">Introduction to web development by Coursera</p>
+    </a>
+  </div>
+
+  <div style="height: 300px; width: 300px; background-color: whitesmoke; margin-top: 60px; margin-right: 500px;">
+    <a href="https://www.coursera.org/account/accomplishments/certificate/HLREQRWRJF6D">
+      <img src="./kroppa-digital.gif" height="200px" width="300px"/>
+      <p style="color: pink;">Introduction to web development by Coursera</p>
+    </a>
+  </div>
+  
+</div> -->
+  </div>
+  </div>
+  
+  <div id="section3"  class="portfolio-section">
+    <div class="container1">
+      <h2 class="hello">Proficiency</h2>
+  
+      <div class="skill html">
+        <span class="skill-name">HTML</span>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+  
+      <div class="skill css">
+        <span class="skill-name">CSS</span>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+  
+      <div class="skill javascript">
+        <span class="skill-name">JavaScript</span>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+      <div class="skill python">
+        <span class="skill-name">Python</span>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+      <div class="skill react">
+        <span class="skill-name">React.js</span>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+    </div>
+    <!-- <h2>Project 3</h2>
+    <p>Description of project 3 goes here...</p> -->
+    <img src="./skills.gif" alt="Project 3">
+
+    
+  </div>
+ <h1>My Certifications</h1>
+  <div style="display: flex;" id="section4"  class="portfolio-section"  >
+   <!-- <div style="display: flex; justify-content: center;">My Certifications</div> -->
+    <!-- <h3 style="color: #e63e6d; ">My Certifications</h3> -->
+     <div style="height: 300px; width: 400px; background-color: white; margin-top: 300px; margin-left: 50px; box-shadow: 5px 5px 10px 5px #e63e6d; ">
+       <img   src="./web1.gif" height="200px" width="400px" />
+       <a href="https://www.coursera.org/account/accomplishments/certificate/HLREQRWRJF6D">Introduction to Web development by Coursera</a>
+    </div>
+
+    <div style="height: 300px; width: 400px; background-color: white; margin-top: 300px; margin-left: 100px; box-shadow: 5px 5px 10px 5px #e63e6d;">
+      <img src="./dataana.gif" height="200px" width="400px"/>
+      <a href="https://www.coursera.org/account/accomplishments/certificate/GTENFX9V6G7A">Data Analysis with R programming By coursera</a>
+   </div>
+
+   <div style="height: 300px; width: 400px; background-color: white; margin-top: 300px; margin-left: 100px; box-shadow: 5px 5px 10px 5px #e63e6d;">
+    <img src="./data.gif" height="200px" width="400px"/>
+    <a href="https://www.coursera.org/account/accomplishments/certificate/93MNYYPAWBWQ">Database Management Essentials By coursera</a>
+ </div>
+  </div>
+
+</body>
+</html>
